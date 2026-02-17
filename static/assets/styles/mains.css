@@ -19,7 +19,7 @@ p{
     display: flex;
     justify-content: center;
     justify-items: center;
-    gap: 20px;
+    gap: 10px;
     margin: auto;
 }
 .nav-link{
@@ -123,3 +123,208 @@ body {
             display: flex;
             flex-direction: column;
         }
+/* ===== CAROUSEL MAIN ===== */
+#carouselExampleIndicators {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  margin-top: 20px;
+}
+
+/* ===== IMAGES ===== */
+.carousel-item img {
+  height: 450px;
+  object-fit: cover;
+  filter: brightness(80%);
+  transition: transform 0.6s ease;
+}
+
+/* Zoom effect on active slide */
+.carousel-item.active img {
+  transform: scale(1.05);
+}
+
+/* ===== CAPTION STYLING ===== */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 20px;
+  border-radius: 15px;
+  bottom: 20px;
+}
+
+/* Caption title */
+.carousel-caption h5 {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+}
+
+/* Caption paragraph */
+.carousel-caption p {
+  font-size: 16px;
+  color: #f1f1f1;
+}
+
+/* ===== INDICATORS (dots) ===== */
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.6;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* ===== NEXT/PREV BUTTONS ===== */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100% 100%;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Hover effect */
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 250px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 20px;
+  }
+
+  .carousel-caption p {
+    font-size: 14px;
+  }
+}
+/* SECTION */
+.specifics{
+  padding: 50px 20px;
+  background: #f8f9fa;
+}
+
+/* TITLE */
+.specifics h5{
+  text-align: center;
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  color: #212529;
+}
+
+/* WRAPPER */
+.findus-wrapper{
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* MAP */
+.map{
+  width: 100%;
+  max-width: 600px;
+  height: 450px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+}
+
+/* FORM BOX */
+.contact-form{
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.12);
+}
+
+/* LABELS */
+.contact-form label{
+  font-weight: 700;
+  font-size: 14px;
+  color: #212529;
+  margin-top: 12px;
+  display: block;
+}
+
+/* INPUTS */
+.contact-form input{
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* INPUT FOCUS EFFECT */
+.contact-form input:focus{
+  border-color: #0d6efd;
+  box-shadow: 0px 0px 0px 4px rgba(13,110,253,0.2);
+}
+
+/* BUTTONS */
+.btns{
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btns button{
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* SUBMIT */
+.btns button[type="submit"]{
+  background: #0d6efd;
+  color: white;
+}
+
+.btns button[type="submit"]:hover{
+  background: #0b5ed7;
+  transform: translateY(-2px);
+}
+
+/* RESET */
+.btns button[type="reset"]{
+  background: #dc3545;
+  color: white;
+}
+
+.btns button[type="reset"]:hover{
+  background: #bb2d3b;
+  transform: translateY(-2px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+  .map{
+    height: 300px;
+  }
+
+  .contact-form{
+    max-width: 600px;
+  }
+}

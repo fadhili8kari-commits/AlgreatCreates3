@@ -1,12 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Member Directory</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../../static/assets/styles/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="../../static/assets/styles/mains.css">
+{% extends 'base.html' %}
+{% block content %}
+ <!-- Bootstrap CSS -->
+
     <style>
         body {
             background: linear-gradient(to right, #5c636a, #997404);
@@ -23,26 +18,8 @@
             vertical-align: middle;
         }
     </style>
-</head>
-<body>
-
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Member Directory</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav ms-auto">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Pricing</a>
-            </div>
-        </div>
-    </div>
-</nav>
+
 
 <!-- Table Section -->
 <div class="container my-5">
@@ -98,11 +75,9 @@
 </div>
 
 <!-- Footer -->
-<footer class="text-center">
-    <p>&copy; 2026 Fadhili Kariuki. All rights reserved.</p>
-</footer>
+
 
 <!-- Bootstrap JS (make sure paths are correct) -->
 <script src="../../static/assets/styles/bootstrap/js/bootstrap.bundle.js"></script>
-</body>
-</html>
+
+{% endblock %}

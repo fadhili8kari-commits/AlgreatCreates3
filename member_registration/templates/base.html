@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <link rel="stylesheet" href="../../static/assets/styles/bootstrap/css/bootstrap.css">
+    <link href="../../static/assets/styles/mains.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+
+    <!-- Brand -->
+    <a class="navbar-brand fw-bold" href="#">Sacco</a>
+
+    <!-- Toggler (optional, but still works) -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+
+      <!-- Push links to the right -->
+      <div class="navbar-nav ms-auto flex-row gap-3">
+        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link" href="{% url 'about' %}">About</a>
+        <a class="nav-link" href="{% url 'profile' %}">Profile</a>
+        <a class="nav-link" href="{% url 'member_details' %}">Member Details</a>
+        <a class="nav-link" href="{% url 'member_list' %}">Member List</a>
+      </div>
+
+    </div>
+  </div>
+</nav>
+
+
+{% block content %}
+{% endblock %}
+<footer>
+  <p>&copy; 2026 Fadhili Kariuki. All rights reserved.</p>
+</footer>
+<script src="../../static/assets/styles/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
